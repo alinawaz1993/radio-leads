@@ -17,7 +17,6 @@ import scipy.signal
 import soundfile as sf
 import requests
 from pydub import AudioSegment
-from dotenv import load_dotenv
 from openai import OpenAI
 
 # ─── Configuration ────────────────────────────────────────────────────────
