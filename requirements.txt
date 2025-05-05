@@ -1,3 +1,4 @@
+# requirements.txt
 streamlit
 numpy
 librosa
@@ -6,3 +7,5 @@ soundfile
 requests
 pydub
 openai
+imageio-ffmpeg
+ffmpeg-binaries
