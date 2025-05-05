@@ -19,6 +19,15 @@ import requests
 from pydub import AudioSegment
 from openai import OpenAI
 
+
+import imageio_ffmpeg
+from pydub import AudioSegment
+
+# point pydub at the embedded ffmpeg/ffprobe binaries
+AudioSegment.converter = imageio_ffmpeg.get_ffmpeg_exe()
+AudioSegment.ffprobe   = imageio_ffmpeg.get_ffmpeg_exe()
+
+
 # ─── Configuration ────────────────────────────────────────────────────────
 STREAM_URL    = "https://broadcastify.cdnstream1.com/2846"
 CHUNK_SEC     = 30
