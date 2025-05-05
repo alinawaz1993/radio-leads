@@ -27,6 +27,9 @@ from pydub import AudioSegment
 AudioSegment.converter = imageio_ffmpeg.get_ffmpeg_exe()
 AudioSegment.ffprobe   = imageio_ffmpeg.get_ffmpeg_exe()
 
+import warnings
+warnings.filterwarnings("ignore", category=SyntaxWarning)
+warnings.filterwarnings("ignore", category=RuntimeWarning)
 
 # ─── Configuration ────────────────────────────────────────────────────────
 STREAM_URL    = "https://broadcastify.cdnstream1.com/2846"
